@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        //  a. Head
+        alert("script in head tag");
+    </script>
 </head>
+<!-- b. Body (before your page’s HTML) -->
+<script>
+    Alert("script tag before your page's HTML");
+</script>
 <body>
     <script>
         // 6. Make use of alerts in your new/existing HTML & CSS
 //            project.
         alert("Periodic Table");
+
+        //  7. Practice placement of <script>element in
+        //   following sections of your project in exercise 6:
+        // a. Head
+        // b. Body (before your page’s HTML)
+        // c. Body (inside your page’s HTML)
+        // d. Body (after your page’s HTML)
     </script>
     <center>
         <h1><b>Periodic Table of the Elemant</b></h1>
- 
+        <!-- c. Body (inside your page’s HTML) -->
+        <script>
+            alert("Script tag inside your page's HTML");
+        </script>
     <table width="30px" height="30px" cellpadding="10px">
         <tr>
         <td bgcolor="#93c572 ">1<br>H</td>
@@ -207,3 +225,7 @@
 </center>
 </body>
 </html>
+<!-- d. Body (after your page’s HTML) -->
+<script>
+    alert("Script tag after your page’s HTML");
+</script>
