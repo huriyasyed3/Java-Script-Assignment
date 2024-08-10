@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH METHODS</title>
+</head>
+<body>
+    <script>
+//  1. Write a program that takes a positive integer from user &
+//     display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number 
+            document.write("<h2>Question 1:</h2>")
+         
+    var userInput = prompt("Please Enter a number");
+    document.write(`number : ${userInput} <br> round off value: ${Math.round(userInput)} <br>
+    floor value: ${Math.floor(userInput)}<br> ceil value: ${Math.ceil(userInput)}`)
+    
+// 2. Write a program that takes a negative floating point
+//    number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+              document.write("<h2>Question 2:</h2>")
+          
+    var userInput1 = prompt("Please enter a negative point number.") ;
+    document.write(`<br><br>number: ${userInput1}<br>round of value: ${Math.round(userInput1)}
+    <br>floor value: ${Math.floor(userInput1)}<br>ceil value: ${Math.ceil(userInput1)}`);
+
+// 3. Write a program that displays the absolute value of a
+//    number.
+//    E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+               document.write("<h2>Question 3:</h2>")
+            
+      var number = prompt("please enter a number");
+      number = parseFloat(number);
+      var absoluteValue = (number >= 0)?number:-number
+      document.write(`<br><br>The absolute value of ${number} is ${absoluteValue}`);
+
+// 4. Write a program that simulates a dice using random()
+//    method of JS Math class. Display the value of dice in your
+//    browser.:
+          document.write("<h2>Question 4:</h2>")
+        
+    var num = prompt("please enter a random dice value");
+     document.write(`<br><br>random dice value ${num}`)
+     var num = Math.floor(Math.random()*6)+1;
+     document.write(`<br>random dice value ${num}`);
+
+// 5. Write a program that simulates a coin toss using random()
+//    method of JS Math class. Display the value of coin in your
+//    browser
+    document.write("<h2>Question 5:</h2>")
+     
+      var coinToss = Math.random();
+      var coinResult = coinToss < 0.5 ?"heads":"Tails";
+      document.write(`<br><br>random coins value ${coinResult}`)
+
+//   6. Write a program that shows a random number between 1
+//      and 100 in your browser.
+           document.write("<h2>Question 6:</h2>")
+  
+
+       var RandomNum = Math.floor(Math.random()*100)+1;
+       document.write(`<br><br>random number between 1 and 100: ${RandomNum} `);
+
+// 7. Write a program that asks the user about his weight. Parse
+//    the user input and display his weight in your browser.
+//    Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+      document.write("<h2>Question 7:</h2>")
+         
+     var UserWeight = prompt("Enter  your Weight in kilograms (e.g., 50, 50kgs, 50.2kgs, 50.2kilograms");
+     var weight = parseFloat(UserWeight);
+     document.write(`<br><br>The weight of user is ${weight} kilograms`)
+
+
+
+// 8. Write a program that stores a random secret number from
+//    1 to 10 in a variable. Ask the user to input a number
+//    between 1 and 10. If the user input equals the secret
+//    number, congratulate the user.
+       document.write("<h2>Question 8:</h2>")
+        
+    const secretNumber = Math.floor(Math.random()*10)+1;
+    var userNumber = parseInt(prompt("Enter a number between 1 and 10"));
+    if(userNumber === secretNumber){
+        alert("Congretulation! You guessed the secret number!");
+    }else{
+        alert("try again")
+    }
+
+    </script>
+</body>
+</html>
